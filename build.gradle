@@ -3,10 +3,11 @@
 buildscript {
     repositories {
         jcenter()
+        google()
     }
     dependencies {
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.2'
-        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.android.tools.build:gradle:3.0.1'
 
         // TODO (1) Make a new Firebase project in the Firebase Console and follow the instructions.
         // The console is here: https://console.firebase.google.com/
@@ -15,13 +16,19 @@ buildscript {
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+        classpath 'com.google.gms:google-services:3.3.1'
     }
 
 }
 
 allprojects {
     repositories {
+        mavenLocal()
+        google()
         jcenter()
+        maven {
+            url 'https://maven.google.com'
+        }
     }
 }
 
