@@ -33,7 +33,7 @@ dependencies {
 
     // Schematic dependencies for ContentProvider
     annotationProcessor 'net.simonvt.schematic:schematic-compiler:0.7.0'
-    implementation 'net.simonvt.schematic:schematic:0.7.0'
+    api 'net.simonvt.schematic:schematic:0.7.0'
 
     // Preferences Dependencies
     implementation 'com.android.support:preference-v7:27.1.1'
